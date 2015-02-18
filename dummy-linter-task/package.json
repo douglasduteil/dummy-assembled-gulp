@@ -1,0 +1,15 @@
+{
+  "name": "dummy-linter-task",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "gulp": "https://github.com/gulpjs/gulp/archive/4.0.tar.gz"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

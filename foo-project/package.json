@@ -1,0 +1,17 @@
+{
+  "name": "foo-project",
+  "version": "1.0.0",
+  "description": "",
+  "devDependencies": {
+    "gulp": "https://github.com/gulpjs/gulp/archive/4.0.tar.gz",
+    "dummy-linter-task": "file:../dummy-linter-task",
+    "dummy-tester-task": "file:../dummy-tester-task"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
