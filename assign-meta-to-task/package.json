@@ -1,11 +1,7 @@
 {
-  "name": "dummy-linter-task",
+  "name": "assign-meta-to-task",
   "version": "1.0.0",
   "description": "",
-  "dependencies": {
-    "gulp": "https://github.com/gulpjs/gulp/archive/4.0.tar.gz",
-    "assign-meta-to-task": "../assign-meta-to-task"
-  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

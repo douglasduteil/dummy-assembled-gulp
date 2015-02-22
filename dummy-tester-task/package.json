@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "dependencies": {
-    "gulp": "https://github.com/gulpjs/gulp/archive/4.0.tar.gz"
+    "gulp": "https://github.com/gulpjs/gulp/archive/4.0.tar.gz",
+    "assign-meta-to-task": "../assign-meta-to-task"
   },
   "main": "index.js",
   "scripts": {

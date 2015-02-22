@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chance bool - example</title>
+</head>
+<body>
+
+  <div ng-app="chance-bool-example">
+    {{ 1 + 1 }}
+  </div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.13/angular.min.js"></script>
+  <script src="chance-factory.js"></script>
+  <script defer async>
+  (function(window){
+    'use strict';
+    window.angular
+      .module('chance-bool-example', ['foo.chance-factory'])
+  }(window));
+  </script>
+</body>
+</html>

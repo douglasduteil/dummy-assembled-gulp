@@ -1,8 +1,9 @@
 {
-  "name": "foo-project",
+  "name": "foo-chance-factory",
   "version": "1.0.0",
   "description": "",
   "devDependencies": {
+    "assign-meta-to-task": "../assign-meta-to-task",
     "gulp": "https://github.com/gulpjs/gulp/archive/4.0.tar.gz",
     "dummy-linter-task": "file:../dummy-linter-task",
     "dummy-tester-task": "file:../dummy-tester-task"
