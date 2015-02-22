@@ -1,8 +1,9 @@
+'use strict';
 
-import gulp from 'gulp';
+var gulp = require('gulp');
+var linterTasks = require('dummy-linter-task');
+var testerTasks = require('dummy-tester-task');
 
-import linterTasks from 'dummy-linter-task';
-import testerTasks from 'dummy-tester-task';
 
 gulp.config = {
   foo: 'bar'
@@ -18,10 +19,12 @@ console.log(gulp.tree());
 ////
 
 // To modulify or merge somewhere???
-function mergeRegistries(target, ...registries){
+function mergeRegistries(target) {
+  var registries = Array.prototype.slice.call(arguments, 1);
 
-  registries.map((registry) => {
-    registry.tree()
-      .forEach((taskName) => target.set(taskName, registry.get(taskName)))
+  registries.map(function (registry) {
+    registry.tree().forEach(function (taskName) {
+      return target.set(taskName, registry.get(taskName));
+    });
   });
 }

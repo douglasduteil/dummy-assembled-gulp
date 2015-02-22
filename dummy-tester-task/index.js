@@ -1,5 +1,5 @@
 
-import gulp from 'gulp';
+var gulp = require('gulp');
 
 gulp.task('test', function(cb){
   console.log('dummy-tester-task config', gulp.config)
@@ -9,4 +9,4 @@ gulp.task('test', function(cb){
   cb();
 });
 
-export default gulp;
+module.exports = gulp;
