@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "devDependencies": {
-    "assign-meta-to-task": "../assign-meta-to-task",
-    "help-from-archy-tree": "../help-from-archy-tree",
+    "assign-meta-to-task": "file:../assign-meta-to-task",
+    "help-from-archy-tree": "file:../help-from-archy-tree",
     "gulp": "https://github.com/gulpjs/gulp/archive/4.0.tar.gz",
     "dummy-linter-task": "file:../dummy-linter-task",
-    "dummy-tester-task": "file:../dummy-tester-task"
+    "dummy-tester-task": "file:../dummy-tester-task",
+    "serve-examples": "file:../serve-examples"
   },
   "main": "index.js",
   "scripts": {

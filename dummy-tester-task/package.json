@@ -4,7 +4,7 @@
   "description": "",
   "dependencies": {
     "gulp": "https://github.com/gulpjs/gulp/archive/4.0.tar.gz",
-    "assign-meta-to-task": "../assign-meta-to-task"
+    "assign-meta-to-task": "file:../assign-meta-to-task"
   },
   "main": "index.js",
   "scripts": {
