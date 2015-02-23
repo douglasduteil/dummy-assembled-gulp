@@ -7,16 +7,34 @@
 <body>
 
   <div ng-app="chance-bool-example">
-    {{ 1 + 1 }}
+    <h3>Default bool (50/50)</h3>
+    <button
+     ng-click="_result = $root.chance.bool()"
+     class="btn btn-default">chance.bool()</button>
+    <p>
+      I'm <span>{{ _result }}</span>
+    </p>
+
+    <h3>Default bool (75/25)</h3>
+    <button
+     ng-click="_result = $root.chance.bool({ likelihood: 75 })"
+     class="btn btn-default">chance.bool({ likelihood: 75 })</button>
+    <p>
+      I'm <span>{{ _result }}</span>
+    </p>
   </div>
 
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.13/angular.min.js"></script>
-  <script src="chance-factory.js"></script>
+  <script src="/dist/chance-factory.js"></script>
   <script defer async>
   (function(window){
     'use strict';
     window.angular
       .module('chance-bool-example', ['foo.chance-factory'])
+      .run(function($rootScope, Chance){
+        $rootScope.chance = new Chance();
+      });
+
   }(window));
   </script>
 </body>
