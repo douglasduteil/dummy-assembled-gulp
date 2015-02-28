@@ -1,5 +1,6 @@
 
 var extend = require('util')._extend;
+var pkg = require('./package.json');
 
 var gulp = require('gulp');
 var assignMetaToTask = require('assign-meta-to-task');
@@ -9,14 +10,14 @@ var browserSync = require('browser-sync');
 gulp.task('serve-examples', function(cb){
 
   var config = extend({
-    exampleFolder: 'example',
-    src: 'src'
-  }, gulp.config);
+    exampleFolder: { cwd: 'example' },
+    src: { cwd: 'src' }
+  }, gulp.config, gulp.config[pkg.name]);
 
   browserSync({
     files: [
-      config.src + '/**',
-      config.exampleFolder + '/**'
+      config.src.cwd + '/**',
+      config.exampleFolder.cwd + '/**'
     ],
     open: false,
     server: {

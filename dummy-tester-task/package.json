@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "dependencies": {
+    "assign-meta-to-task": "file:../assign-meta-to-task",
     "gulp": "https://github.com/gulpjs/gulp/archive/4.0.tar.gz",
-    "assign-meta-to-task": "file:../assign-meta-to-task"
+    "jasmine-core": "^2.2.0",
+    "karma": "^0.12.31",
+    "karma-jasmine": "^0.3.5",
+    "karma-phantomjs-launcher": "^0.1.4"
   },
   "main": "index.js",
   "scripts": {

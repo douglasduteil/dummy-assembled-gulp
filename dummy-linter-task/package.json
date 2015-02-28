@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "dependencies": {
+    "assign-meta-to-task": "file:../assign-meta-to-task",
     "gulp": "https://github.com/gulpjs/gulp/archive/4.0.tar.gz",
-    "assign-meta-to-task": "file:../assign-meta-to-task"
+    "gulp-jshint": "^1.9.2",
+    "jshint-stylish": "^1.0.1",
+    "merge-stream": "^0.1.7"
   },
   "main": "index.js",
   "scripts": {
